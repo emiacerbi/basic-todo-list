@@ -8,7 +8,6 @@ const TodoList = ({todoList, toggleComplete}) => {
   const todo = todoList.map(todo => {
     return (
       <Stack 
-        // textDecoration={todo.complete ? 'line-through' : null }
         direction='row'
         alignItems='center'
         justifyContent='space-between'
@@ -21,8 +20,7 @@ const TodoList = ({todoList, toggleComplete}) => {
         transition='.1s background ease-in-out'
         width='100%'
       >
-        <Text
-        >
+        <Text>
           - {todo.task}
         </Text>
 

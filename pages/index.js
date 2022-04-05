@@ -1,5 +1,5 @@
 import { Button, Container, FormControl, Heading, Input, Stack } from '@chakra-ui/react'
-import {useState} from 'react'
+import { useState } from 'react'
 import TodoList from '../components/TodoList'
 
 import data from '../utilities/data.json'
@@ -50,7 +50,7 @@ export default function Home() {
       bg='#f1f4fd' 
       borderRadius='2rem'
       shadow='rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;'
-      height='75vh' 
+      minHeight='75vh' 
       width='50vw'
       alignSelf='center'
       justifySelf='center'
@@ -101,7 +101,7 @@ export default function Home() {
               color='whitesmoke'
               bg='#131339'
               _hover={{opacity: '.7'}}
-              >
+            >
               Add task
             </Button>
 
@@ -111,14 +111,13 @@ export default function Home() {
               variant='outline'
               colorScheme='#131339'
               _hover={{bg: '#131339', color: 'whitesmoke'}}
-
             >
               Remove finished tasks
             </Button>
 
           </FormControl>
-
         </form>
+
       </Stack>
     </Container>
       
