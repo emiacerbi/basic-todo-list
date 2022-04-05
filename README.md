@@ -10,7 +10,7 @@ My try at a simple Todo App. Displays a list of todos.
 
 ### Links
 
-- Live Site URL: [Link](https://basic-todo-list-kruw8kh6p-emiacerbi.vercel.app/)
+- Live Site URL: [Link](https://basic-todo-list-kappa.vercel.app/)
 
 ## My process
 
