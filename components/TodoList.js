@@ -22,7 +22,6 @@ const TodoList = ({todoList, toggleComplete}) => {
         width='100%'
       >
         <Text
-          
         >
           - {todo.task}
         </Text>

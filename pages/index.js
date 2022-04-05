@@ -9,7 +9,6 @@ export default function Home() {
   const [todoList, setTodoList] = useState(data)  
   const [inputValue, setInputValue] = useState("")
 
-
   const toggleComplete = (id) => {
     return setTodoList(prevTodoList => prevTodoList.map(todo => todo.id === id ? { ...todo, complete: !todo.complete } : todo))
   }
@@ -45,8 +44,6 @@ export default function Home() {
     setInputValue('')
   }
 
-
-  
   return (
 
     <Container 
