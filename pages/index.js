@@ -35,7 +35,7 @@ export default function Home() {
       alert('No empty strings please!')
 
     } else if (todoList.length > 8) {
-      alert('Delete one before adding more!')
+      alert('Delete one todo before adding more!')
 
     } else {
       setTodoList(prevTodoList => [...prevTodoList, newTodo])
@@ -73,48 +73,52 @@ export default function Home() {
       </Stack>
 
       <Stack>
-        <FormControl display='grid' gap={3} gridTemplateColumns='1fr 1fr' >
 
-          <Input 
-            type='text' 
-            value={inputValue}
-            onChange={handleChange}
-            gridColumn= '1/3'
-            color='#131339'
-            fontWeight={500}
-            colorScheme='blackAlpha.900'
-            variant='outline'
-            outline='1px solid #131339'
-            placeholder='Buy groceries...'
-            _hover={{outline: '2px solid #131339'}}
-            _focus={{outline: '2px solid #131339'}}
-          />
+        <form>
+          <FormControl display='grid' gap={3} gridTemplateColumns='1fr 1fr' >
 
-          <Button
-            gridColumn= '1/2'
-            type="submit"
-            onClick={handleSubmit}
-            variant='filled'
-            colorScheme='red'
-            color='whitesmoke'
-            bg='#131339'
-            _hover={{opacity: '.7'}}
+            <Input 
+              type='text' 
+              value={inputValue}
+              onChange={handleChange}
+              gridColumn= '1/3'
+              color='#131339'
+              fontWeight={500}
+              colorScheme='blackAlpha.900'
+              variant='outline'
+              outline='1px solid #131339'
+              placeholder='Buy groceries...'
+              _hover={{outline: '2px solid #131339'}}
+              _focus={{outline: '2px solid #131339'}}
+            />
+
+            <Button
+              gridColumn= '1/2'
+              type="submit"
+              onClick={handleSubmit}
+              variant='filled'
+              colorScheme='red'
+              color='whitesmoke'
+              bg='#131339'
+              _hover={{opacity: '.7'}}
+              >
+              Add task
+            </Button>
+
+            <Button
+              gridColumn= '2/3'
+              onClick={removeComplete}
+              variant='outline'
+              colorScheme='#131339'
+              _hover={{bg: '#131339', color: 'whitesmoke'}}
+
             >
-            Add task
-          </Button>
+              Remove finished tasks
+            </Button>
 
-          <Button
-            gridColumn= '2/3'
-            onClick={removeComplete}
-            variant='outline'
-            colorScheme='#131339'
-            _hover={{bg: '#131339', color: 'whitesmoke'}}
+          </FormControl>
 
-          >
-            Remove finished tasks
-          </Button>
-
-        </FormControl>
+        </form>
       </Stack>
     </Container>
       

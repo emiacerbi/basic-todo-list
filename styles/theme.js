@@ -9,7 +9,7 @@ const theme = extendTheme({
         justifyContent: 'center',
         alignItems: 'center',
         minHeight: '100vh',
-        minWidth: '100vh',
+        minWidth: '100vw',
         bg: '#f1f4fd',
         color: 'white',
       },
